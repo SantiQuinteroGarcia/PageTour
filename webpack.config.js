@@ -1,4 +1,3 @@
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: './src/app/index.js',
   output: {
@@ -11,10 +10,6 @@ module.exports = {
         use: 'babel-loader',
         test: /\.js$/,
         exclude: /node_modules/
-      },
-      {
-        test: /\.css$/i,
-        use: ['css-loader'],
       }
     ]
   }

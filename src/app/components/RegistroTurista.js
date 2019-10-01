@@ -74,7 +74,9 @@ class RegistroTuristas extends Component {
                             <div className="col-md-4 mb-3">
                                 <label for="ConfirmPasswordTurista">Confirmar contraseña</label>
                                 <input type="password" className="form-control" name="confirmPassword" id="ConfirmPasswordTurista" placeholder="Confirmar contraseña" required></input>
-
+                            </div>
+                        </div>
+                    </form>
                     <form className="text-primary">
                         <div className="form-row">
                             <div className="col-md-4 mb-3">
@@ -128,7 +130,7 @@ class RegistroTuristas extends Component {
                             <div className="col">
 
                                 <label for="list-departamento">Departamento</label>
-                                <select onChange={this.handleChange} id="list-departamento" name="departamento" className="custom-select" required>
+                                <select onChange={this.handleChange} id="list-departamento" name="departamento" className="custom-select" required></select>
 
                                 <label for="validationDefault03">Departamento</label>
                                 <select onChange={this.handleChange} id="list-departamento" className="custom-select">
@@ -146,7 +148,7 @@ class RegistroTuristas extends Component {
                             <div className="col">
 
                                 <label for="list-ciudad">Ciudad</label>
-                                <select id="list-ciudad" name="ciudad" className="custom-select" required>
+                                <select id="list-ciudad" name="ciudad" className="custom-select" required></select>
 
                                 <label for="validationDefault04">Ciudad</label>
                                 <select id="list-ciudad" className="custom-select">
@@ -166,7 +168,8 @@ class RegistroTuristas extends Component {
                         <div className="form-group">
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" id="terminos" required></input>
-                                <label className="form-check-label" for="terminos">
+                                <label className="form-check-label" for="terminos"></label>
+                            </div>
                             <div className="col">
                                 <label for="validationDefault05">Teléfono</label>
                                 <input type="text" className="form-control" id="validationDefault05" placeholder="Teléfono" required></input>
@@ -183,7 +186,7 @@ class RegistroTuristas extends Component {
                         <button className="btn btn-primary" type="submit">Registrarse</button>
                     </form>
                 </div>
-            </div >
+            </div>
         );
     }
 }
