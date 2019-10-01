@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class PerfilUsuario extends Component {
+class PerfilTurista extends Component {
 
 
 
@@ -21,61 +21,44 @@ class PerfilUsuario extends Component {
                         <div className="form-row">
                             <div className="col-md-4 mb-3">
                                 <label for="validationDefault03">Nombre</label>
-                                <input type="text" className="form-control"
-                                    id="validationDefault02" placeholder="Nombre"
-                                    required></input>
+                                <p className="text-dark">Santiago De Jesús</p>
                             </div>
                             <div className="col-md-4 mb-3">
                                 <label for="validationDefault02">Apellidos</label>
-                                <input type="text" className="form-control"
-                                    id="validationDefault02" placeholder="Apellidos"
-                                    required></input>
+                                <p className="text-dark">Quintero García</p>
                             </div>
                             <div className="col-md-4 mb-3">
                                 <label for="validationDefaultUsername">Correo
                                     electrónico</label>
-                                <input type="email" className="form-control"
-                                    id="validationDefault02" placeholder="Correo"
-                                    required></input>
+                                    <p className="text-dark">santiago.quinterog@upb.edu.co</p>
                             </div>
                         </div>
                         <div className="form-row">
                             <div className="col-md-4 mb-3">
                                 <label for="validationDefault03">Tipo de documento</label>
-                                <select className="custom-select">
-                                    <option selected></option>
-                                </select>
+                                <p className="text-dark">Cédula de ciudadanía</p>
                             </div>
                             <div className="col-md-4 mb-3">
                                 <label for="validationDefault02">Número de documento</label>
-                                <input type="number" className="form-control"
-                                    id="validationDefault02" placeholder="Número de
-                                    documento"
-                                    required></input>
+                                <p className="text-dark">1111111111</p>
                             </div>
                             <div className="col-md-4 mb-3">
-                                <label for="validationDefault05">Teléfono</label>
-                                <input type="number" className="form-control"
-                                    id="validationDefault05" placeholder="Teléfono"
-                                    required></input>
+                                <label for="validationDefault04">Teléfono</label>
+                                <input type="number" className="form-control" id="telefono" value="11111111"></input>
                             </div>
                             <div className="col-md-4 mb-3">
-                                <label for="validationDefault05">Confirmar
+                                <label for="validationDefault05">Contraseña</label>
+                                <input type="password" className="form-control"
+                                    id="validationDefault05" placeholder="******"></input>
+                            </div>
+                            <div className="col-md-4 mb-3">
+                                <label for="validationDefault06">Confirmar
                                     contraseña</label>
                                 <input type="password" className="form-control"
-                                    id="validationDefault05" placeholder="******"
-                                    required></input>
+                                    id="validationDefault06" placeholder="******"></input>
                             </div>
                         </div>
-                        <div className="form-group">
-                            <div className="form-check">
-                                <input className="form-check-input" type="checkbox"
-                                    id="invalidCheck2" required></input>
-                                <label className="form-check-label" for="invalidCheck2">
-                                    Acepto los términos y condiciones
-                                </label>
-                            </div>
-                        </div>
+                        
                         <button className="btn btn-primary" type="submit">Actualizar
                         Perfil</button>
                     </form>
@@ -85,4 +68,4 @@ class PerfilUsuario extends Component {
     }
 }
 
-export default PerfilUsuario;
+export default PerfilTurista;

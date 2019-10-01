@@ -8,7 +8,7 @@ import RutasExtremas from './components/RutasExtremas';
 import AmpliacionLugar from './components/AmpliacionLugar';
 import FormularioQuejas from './components/FormularioQuejas';
 import Principal from './components/Principal';
-import PerfilUsuario from './components/PerfilUsuario';
+import PerfilTurista from './components/PerfilTurista';
 import Login from './components/Login';
 
 const btnPrincipal = document.getElementById('btn-ppal');
@@ -19,7 +19,7 @@ const btnQueja = document.getElementById('btn-queja');
 const btnExtremo = document.getElementById('btn-extremo');
 const btnAmpliar = document.getElementById('btn-ampliar');
 
-render(<Principal />, document.getElementById('app'));
+render(<PerfilTurista />, document.getElementById('app'));
 //Acciones de los botones
 btnPrincipal.addEventListener("click", () => { render(<Principal />, document.getElementById('app')); });
 btnRegistroTurista.addEventListener("click", () => { render(<RegistroTurista />, document.getElementById('app')); });
