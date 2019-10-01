@@ -1,6 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
+const methodOverrride = require('method-override');
+const session = require('express-session');
 
 const app = express();
 
@@ -14,8 +16,19 @@ app.set('port', process.env.PORT || 3000);
 app.use(morgan('dev'));
 app.use(express.json());
 
+app.use(express.urlencoded({extended: false}));
+app.use(methodOverrride('_method'));
+app.use(session({
+  secret: 'pagetour',
+  resave: true,
+  saveUninitialized: true
+}));
+
 // Routes
 app.use('/api/tasks', require('./routes/task.routes'));
+app.use(require('./routes/index'));
+app.use(require('./routes/users'));
+
 
 // Static Files
 app.use(express.static(path.join(__dirname, 'public')));;

@@ -9,6 +9,7 @@ import AmpliacionLugar from './components/AmpliacionLugar';
 import FormularioQuejas from './components/FormularioQuejas';
 import Principal from './components/Principal';
 import PerfilUsuario from './components/PerfilUsuario';
+import Login from './components/Login';
 
 const btnPrincipal = document.getElementById('btn-ppal');
 const btnRegistroTurista = document.getElementById('btn-registroTurista');
