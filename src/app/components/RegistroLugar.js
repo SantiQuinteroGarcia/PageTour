@@ -55,7 +55,7 @@ class RegistroLugar extends Component {
                         <div className="form-row">
                             <div className="col-md-4 mb-3">
                                 <label for="nombreLugar">Lugar</label>
-                                <input type="email" className="form-control" id="nombreLugar" placeholder="Nombre del lugar" required></input>
+                                <input type="text" className="form-control" id="nombreLugar" placeholder="Nombre del lugar" required></input>
 
                             </div>
                             <div className="col-md-4 mb-3">
@@ -88,7 +88,7 @@ class RegistroLugar extends Component {
                             </div>
                         </div>
                         <div className="form-row">
-                            <div className="col-md-6 mb-3">
+                            <div className="col-md-4 mb-3">
                                 <label for="validationDefault03">Departamento</label>
                                 <select onChange={this.handleChange} id="list-departamento" className="custom-select">
                                     {
@@ -101,7 +101,7 @@ class RegistroLugar extends Component {
                                     }
                                 </select>
                             </div>
-                            <div className="col-md-3 mb-3">
+                            <div className="col-md-4 mb-3">
                                 <label for="validationDefault04">Ciudad</label>
                                 <select id="list-ciudad" className="custom-select">
                                     {
@@ -114,20 +114,104 @@ class RegistroLugar extends Component {
                                     }
                                 </select>
                             </div>
-                            <div className="col-md-3 mb-3">
+                            <div className="col-md-4 mb-3">
                                 <label for="validationDefault05">Teléfono</label>
                                 <input type="number" className="form-control" id="validationDefault05" placeholder="Teléfono" required></input>
                             </div>
                         </div>
                         <div className="form-row">
-                            {/* Escribir codigo */}
+                            <div className="input-group col-md-4">
+                                <label>Actividades</label>
+                                <input className="form-control marginLados" placeholder="¿Qué hay para hacer?" required></input>
+                                <img src="img/plus.png" height="34px" id="addActividad" alt="Añadir actividad"></img>
+                            </div>
+                            <div className="input-group col-md-4">
+                                <label>Hoteles</label>
+                                <input className="form-control marginLados" placeholder="Nombre del hotel" required></input>
+                                <img src="img/plus.png" height="34px" id="addHotel" alt="Añadir hotel"></img>
+                            </div>
+                            <div className="text-dark">
+                                <label className="text-primary marginLados">¿Hay parqueaderos?</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="hayParquedaero" id="siHayParqueadero" value="si" required></input>
+                                    <label class="form-check-label" for="siHayParquedaero">
+                                        Sí
+                                </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="hayParquedaero" id="noHayParqueadero" value="no"></input>
+                                    <label class="form-check-label" for="noHayParqueadero">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
                         </div>
+                        <br></br>
+                        <div className="form-row">
+                            <div className="text-dark">
+                                <label className="text-primary marginDerecha">Puntos redimibles</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="Recoger_basuras" id="puntoRedimible1"></input>
+                                    <label class="form-check-label" for="puntoRedimible1">Recoger basuras - 5000</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="Compras_artesanales" id="puntoRedimible2"></input>
+                                    <label class="form-check-label" for="puntoRedimible2">Compras artesanales - 5000</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="Siembra_arbol" id="puntoRedimible3"></input>
+                                    <label class="form-check-label" for="puntoRedimible3">Siembra un árbol - 8000</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="ir_bicicleta" id="puntoRedimible4"></input>
+                                    <label class="form-check-label" for="puntoRedimible4">Usar bicicleta - 5000</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="form-row text-dark">
+                            <label className="text-primary marginDerecha">Horario</label>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Lunes</th>
+                                        <td scope="col"><span>Hora entrada</span><input type="time" className="marginLados" id="horaEntLun"></input><span className="marginLados">Hora salida</span><input type="time" className="marginDerecha" id="horaSalLun"></input></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Martes</th>
+                                        <td scope="col"><span>Hora entrada</span><input type="time" className="marginLados" id="horaEntMar"></input><span className="marginLados">Hora salida</span><input type="time" className="marginDerecha" id="horaSalMar"></input></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Miércoles</th>
+                                        <td scope="col"><span>Hora entrada</span><input type="time" className="marginLados" id="horaEntMie"></input><span className="marginLados">Hora salida</span><input type="time" className="marginDerecha" id="horaSalMie"></input></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Jueves</th>
+                                        <td scope="col"><span>Hora entrada</span><input type="time" className="marginLados" id="horaEntJue"></input><span className="marginLados">Hora salida</span><input type="time" className="marginDerecha" id="horaSalJue"></input></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Viernes</th>
+                                        <td scope="col"><span>Hora entrada</span><input type="time" className="marginLados" id="horaEntVie"></input><span className="marginLados">Hora salida</span><input type="time" className="marginDerecha" id="horaSalVie"></input></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Sábado</th>
+                                        <td scope="col"><span>Hora entrada</span><input type="time" className="marginLados" id="horaEntSab"></input><span className="marginLados">Hora salida</span><input type="time" className="marginDerecha" id="horaSalSab"></input></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Domingo</th>
+                                        <td scope="col"><span>Hora entrada</span><input type="time" className="marginLados" id="horaEntDom"></input><span className="marginLados">Hora salida</span><input type="time" className="marginDerecha" id="horaSaDom"></input></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Festivos</th>
+                                        <td scope="col"><span>Hora entrada</span><input type="time" className="marginLados" id="horaEntFes"></input><span className="marginLados">Hora salida</span><input type="time" className="marginDerecha" id="horaSalFes"></input></td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <br></br>
                         <div className="form-group">
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" value="" id="invalidCheck2" required></input>
-                                <label className="form-check-label" for="invalidCheck2">
-                                    Acepto los terminos y condiciones
-                        </label>
+                                <label className="form-check-label" for="invalidCheck2">Acepto los terminos y condiciones</label>
                             </div>
                         </div>
                         <button className="btn btn-primary" type="submit">Registrar lugar</button>
