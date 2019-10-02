@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import CardTopLugares from './components/CardTopLugares';
-import RegistroTurista from './components/RegistroTurista'
-import RegistroEntidad from './components/RegistroEntidad'
+import RegistroTurista from './components/RegistroTurista';
+import RegistroEntidad from './components/RegistroEntidad';
+import registroLugar from './components/RegistroLugar';
 import Precios from './components/Precios';
 import RutasExtremas from './components/RutasExtremas';
 import AmpliacionLugar from './components/AmpliacionLugar';
 import FormularioQuejas from './components/FormularioQuejas';
 import Principal from './components/Principal';
-import PerfilUsuario from './components/PerfilUsuario';
+import PerfilTurista from './components/PerfilTurista';
 import Login from './components/Login';
+import RegistroLugar from './components/RegistroLugar';
+import PerfilLugar from './components/perfilLugar';
 
 const btnPrincipal = document.getElementById('btn-ppal');
 const btnRegistroTurista = document.getElementById('btn-registroTurista');
@@ -19,7 +22,7 @@ const btnQueja = document.getElementById('btn-queja');
 const btnExtremo = document.getElementById('btn-extremo');
 const btnAmpliar = document.getElementById('btn-ampliar');
 
-render(<Principal />, document.getElementById('app'));
+render(<Principal/>, document.getElementById('app'));
 //Acciones de los botones
 btnPrincipal.addEventListener("click", () => { render(<Principal />, document.getElementById('app')); });
 btnRegistroTurista.addEventListener("click", () => { render(<RegistroTurista />, document.getElementById('app')); });
