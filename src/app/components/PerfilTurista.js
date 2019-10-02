@@ -7,7 +7,7 @@ class PerfilTurista extends Component {
     render() {
         return (
             <div>
-                <div className="jumbotron bg-primary text-light font-weight-bolder">
+                <div className="jumbotron bg-danger text-light font-weight-bolder">
                     <h1 className="display-4">¡Bienvenido de nuevo!</h1>
                     <p className="lead">Pagetour quiere conectarte con los mejores
                         lugares.</p>
