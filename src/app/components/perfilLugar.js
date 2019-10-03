@@ -91,7 +91,7 @@ class PerfilLugar extends Component {
                         </div>
                         <div className="form-row text-dark">
                             <label className="text-primary marginDerecha">Horario</label>
-                            <table class="table table-striped">
+                            <table class="table table-striped table-primary">
                                 <thead>
                                     <tr>
                                         <th scope="col">Lunes</th>
