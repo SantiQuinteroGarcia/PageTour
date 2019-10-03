@@ -168,9 +168,9 @@ class RegistroLugar extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="form-row text-dark">
+                        <div className="form-row">
                             <label className="text-primary marginDerecha">Horario</label>
-                            <table class="table table-striped">
+                            <table class="table table-striped table-primary">
                                 <thead>
                                     <tr>
                                         <th scope="col">Lunes</th>
