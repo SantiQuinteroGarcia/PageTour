@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class AmpliacionLugar extends Component {
+class AmpliacionRutaExtrema extends Component {
 
     constructor() {
         super();
@@ -29,20 +29,19 @@ class AmpliacionLugar extends Component {
                         </ul>
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title">Nombre</h5>
-                        <p className="card-text">Breve descripcion</p>
+                        <h5 className="card-title">Quebrada El Pantanero</h5>
+                        <p className="card-text">Quebrada llena de pantano con tres kilómetros de largo</p>
                         <div className="card mb-3">
-                            <img src="img/Logo.png" className="rounded mx-auto d-block" alt="..."></img>
+                            <img src="img/maxresdefault.jpg" className="rounded mx-auto d-block" alt="..."></img>
                             <div className="card-body">
                                 <h5 className="card-title">Tipo de lugar</h5>
                                 <div className="card mx-auto">
                                     <ul className="list-group list-group-flush">
-                                        <li className="list-group-item">Correo</li>
-                                        <li className="list-group-item">Telefono</li>
-                                        <li className="list-group-item">Ciudad</li>
-                                        <li className="list-group-item">Departamento</li>
-                                        <li className="list-group-item">Valor</li>
-                                        <div className="card-header"> Tiene restaurante</div>
+                                        <li className="list-group-item">rutaextrema@hot.co</li>
+                                        <li className="list-group-item">3124567889</li>
+                                        <li className="list-group-item">Doradal</li>
+                                        <li className="list-group-item">Antioquia</li>
+                                        <li className="list-group-item">50000</li>
                                     </ul>
                                 </div>
                                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
@@ -57,4 +56,4 @@ class AmpliacionLugar extends Component {
     }
 }
 
-export default AmpliacionLugar;
+export default AmpliacionRutaExtrema;
