@@ -19,6 +19,8 @@ import LugaresMasVisitados from './components/LugaresMasVisitados';
 import VisitantesDeLaSemana from './components/VisitantesDeLaSemana';
 import ToursEspeciales from './components/ToursEspeciales';
 import AmpliacionTourEspecial from './components/AmpliacionTourEspecial';
+import RutasDelCafe from './components/RutasDelCafe';
+import AmpliacionRutaDelCafe from './components/AmpliacionRutaDelCafe';
 
 const btnPrincipal = document.getElementById('btn-ppal');
 const btnRegistroTurista = document.getElementById('btn-registroTurista');
@@ -28,7 +30,7 @@ const btnQueja = document.getElementById('btn-queja');
 const btnExtremo = document.getElementById('btn-extremo');
 const btnAmpliar = document.getElementById('btn-ampliar');
 
-render(<AmpliacionTourEspecial/>, document.getElementById('app'));
+render(<Principal/>, document.getElementById('app'));
 //Acciones de los botones
 btnPrincipal.addEventListener("click", () => { render(<Principal />, document.getElementById('app')); });
 btnRegistroTurista.addEventListener("click", () => { render(<RegistroTurista />, document.getElementById('app')); });
