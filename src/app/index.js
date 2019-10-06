@@ -21,6 +21,7 @@ import ToursEspeciales from './components/ToursEspeciales';
 import AmpliacionTourEspecial from './components/AmpliacionTourEspecial';
 import RutasDelCafe from './components/RutasDelCafe';
 import AmpliacionRutaDelCafe from './components/AmpliacionRutaDelCafe';
+import PuntosRedimibles from './components/PuntosRedimibles';
 
 const btnPrincipal = document.getElementById('btn-ppal');
 const btnRegistroTurista = document.getElementById('btn-registroTurista');
@@ -30,7 +31,7 @@ const btnQueja = document.getElementById('btn-queja');
 const btnExtremo = document.getElementById('btn-extremo');
 const btnAmpliar = document.getElementById('btn-ampliar');
 
-render(<Principal/>, document.getElementById('app'));
+render(<PuntosRedimibles/>, document.getElementById('app'));
 //Acciones de los botones
 btnPrincipal.addEventListener("click", () => { render(<Principal />, document.getElementById('app')); });
 btnRegistroTurista.addEventListener("click", () => { render(<RegistroTurista />, document.getElementById('app')); });
