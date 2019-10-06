@@ -60,7 +60,7 @@ class RegistroLugar extends Component {
                             </div>
                             <div className="col-md-4 mb-3">
                                 <label for="validationDefault02">Encargado</label>
-                                <input type="text" className="form-control" id="validationDefault02" placeholder="Nombre del encargado" required></input>
+                                <input type="text" className="form-control" id="encargado" placeholder="Nombre del encargado" required></input>
                             </div>
                             <div className="col-md-4 mb-3">
                                 <label>Tipo de lugar</label>
@@ -74,7 +74,7 @@ class RegistroLugar extends Component {
                         <div className="form-row">
                             <div className="col-md-4 mb-3">
                                 <label>Descripción</label>
-                                <textarea className="form-control"></textarea>
+                                <textarea className="form-control" id="descripcion"></textarea>
                             </div>
                             <div className="col-md-4 mb-3">
                                 <label for="precio">Precio de ingreso</label>
@@ -83,14 +83,14 @@ class RegistroLugar extends Component {
                             <div className="col-md-4 mb-3">
                                 <label for="validationDefaultUsername">Correo electrónico</label>
                                 <div className="input-group">
-                                    <input type="email" className="form-control" id="validationDefaultUsername" placeholder="Correo" aria-describedby="inputGroupPrepend2" required></input>
+                                    <input type="email" className="form-control" id="correo" placeholder="Correo" aria-describedby="inputGroupPrepend2" required></input>
                                 </div>
                             </div>
                         </div>
                         <div className="form-row">
                             <div className="col-md-4 mb-3">
                                 <label for="validationDefault03">Departamento</label>
-                                <select onChange={this.handleChange} id="list-departamento" className="custom-select">
+                                <select onChange={this.handleChange} id="depto" className="custom-select">
                                     {
                                         this.state.departamentos.map(dep => {
                                             return (
@@ -103,7 +103,7 @@ class RegistroLugar extends Component {
                             </div>
                             <div className="col-md-4 mb-3">
                                 <label for="validationDefault04">Ciudad</label>
-                                <select id="list-ciudad" className="custom-select">
+                                <select id="municipio" className="custom-select">
                                     {
                                         this.state.municipios.map(mun => {
                                             return (
@@ -116,7 +116,7 @@ class RegistroLugar extends Component {
                             </div>
                             <div className="col-md-4 mb-3">
                                 <label for="validationDefault05">Teléfono</label>
-                                <input type="number" className="form-control" id="validationDefault05" placeholder="Teléfono" required></input>
+                                <input type="number" className="form-control" id="telefono" placeholder="Teléfono" required></input>
                             </div>
                         </div>
                         <div className="form-row">
